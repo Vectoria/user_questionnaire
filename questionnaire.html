@@ -12,14 +12,25 @@
 </head>
 
 <body>
-    <main class="container">
-        <h1>Questionnaire</h1>
+    <main class="container py-3">
+        <h1 class="text-center">Questionnaire</h1>
     </main>
-    <div class="input-group">
-        <span class="input-group-text">First and last name</span>
-        <input type="text" aria-label="First name" class="form-control">
-        <input type="text" aria-label="Last name" class="form-control">
+    <div class="container">
+        <h3 class="py-2">Insira seu nome antes de prosseguir o questionario</h3>
+        <div class="input-group py-2">
+            <span class="input-group-text">First and last name</span>
+            <input type="text" aria-label="First name" class="form-control form-control-lg" placeholder="Primeiro nome">
+            <input type="text" aria-label="Last name" class="form-control form-control-lg" placeholder="Sobrenome">
+        </div>
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+            Aceitar os termos e condições
+        </label>
     </div>
+    <div class="container text-center">
+       <a  type="button" class="btn btn-outline-success btn-lg" href="index.html">Success</a>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
