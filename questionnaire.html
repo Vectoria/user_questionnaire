@@ -26,10 +26,16 @@
                     <p class="card-text">
                     <div class="input-group py-2">
                         <span class="input-group-text">First and last name</span>
-                        <input type="text" aria-label="First name" class="form-control form-control-lg"
-                            placeholder="1º nome">
-                        <input type="text" aria-label="Last name" class="form-control form-control-lg"
-                            placeholder="Sobrenome">
+                        <div class="form-floating">
+                            <input type="text" aria-label="First name" class="form-control form-control-lg"
+                                id="floatingInput" placeholder="1º nome">
+                            <label for="floatingInput">1º nome</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="text" aria-label="First name" class="form-control form-control-lg"
+                                id="floatingInput" placeholder="Sobrenome">
+                            <label for="floatingInput">Sobrenome</label>
+                        </div>
                     </div>
 
                     </p>
@@ -40,32 +46,35 @@
         <div class="py-3">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Insira seu gênero</h5>
+                    <h5 class="card-title">Seleciona o seu gênero</h5>
                     <p class="card-text">
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                            <label class="form-check-label" for="flexRadioDefault1">
-                              Masculino
-                            </label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                            <label class="form-check-label" for="flexRadioDefault2">
-                              Femenino
-                            </label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                            <label class="form-check-label" for="flexRadioDefault2">
-                              Não Binario
-                            </label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                            <label class="form-check-label" for="flexRadioDefault2">
-                              Femenino
-                            </label>
-                          </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Masculino
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                            checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Femenino
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                            checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Não Binario
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                            checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Femenino
+                        </label>
+                    </div>
 
                     </p>
                 </div>
