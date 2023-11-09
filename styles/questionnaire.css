@@ -1,0 +1,22 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: purple;
+    background-color: rgba(225, 225, 225, 0.722);
+}
+
+#baixo {
+    position: absolute;
+    bottom: 0;
+    right: 50;
+    left: 50;
+}
+
+main {
+    background-color: purple;
+}
+
+.card {
+    --bs-card-border-color: purple;
+    --bs-card-color:purple;
+}
