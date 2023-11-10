@@ -24,6 +24,10 @@ body {
     color: rgb(212, 42, 42);
 }
 
+.likert li {
+    float: left;
+    list-style-type: none;
+  }
 main {
     background-color: purple;
 }
