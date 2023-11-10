@@ -1,3 +1,13 @@
+document.addEventListener('DOMContentLoaded', function () {
+    // getting and accessing the checkbox and its label
+    let checkbox = document.getElementById('flexCheckDefault')
+    let next_button = document.getElementById('next_button')
+
+    checkbox.addEventListener('change', function () {
+        next_button.classList.toggle('disabled', !checkbox.checked)
+    })
+})
+
 function convertLocalStorageToObject() {
     const localStorageData = {};
 
