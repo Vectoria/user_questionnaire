@@ -27,13 +27,13 @@
                         <span class="input-group-text">Insira o seu nome</span>
                         <div class="form-floating">
                             <input type="text" aria-label="First name" class="form-control form-control-lg"
-                                id="floatingInput" placeholder="1º nome">
-                            <label for="floatingInput">1º nome</label>
+                                id="floatingInput1" placeholder="1º nome">
+                            <label for="floatingInput1">1º nome</label>
                         </div>
                         <div class="form-floating">
-                            <input type="text" aria-label="First name" class="form-control form-control-lg"
-                                id="floatingInput" placeholder="Sobrenome">
-                            <label for="floatingInput">Sobrenome</label>
+                            <input type="text" aria-label="Last name" class="form-control form-control-lg"
+                                id="floatingInput2" placeholder="Sobrenome">
+                            <label for="floatingInput2">Sobrenome</label>
                         </div>
                     </div>
 
@@ -47,7 +47,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Idade</h5>
                     <p class="card-text">
-                        <select class="form-select" aria-label="Default select example">
+                        <select class="form-select" id="idade" aria-label="Default select example">
                             <option selected>Seleciona a sua idade</option>
                             <option value="0-17">Menor de idade</option>
                             <option value="18-24">18-24 anos</option>
@@ -63,7 +63,7 @@
         <div class="py-3">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Seleciona o seu gênero</h5>
+                    <h5 class="card-title">Seleciona o seu género</h5>
                     <p class="card-text">
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
@@ -101,15 +101,93 @@
                 <div class="card-body">
                     <h5 class="card-title">Quanto gostas de rock?</h5>
                     <p class="card-text">
-                        <ul class="likert">
-                            <li> Not Guilty </li>
-                            <li><input type="radio" name="guilty" value="1" /></li>
-                            <li><input type="radio" name="guilty" value="2" /></li>
-                            <li><input type="radio" name="guilty" value="3" /></li>
-                            <li><input type="radio" name="guilty" value="4" /></li>
-                            <li><input type="radio" name="guilty" value="5" /></li>
-                            <li> Very Guilty </li>
-                          </ul>
+
+                    <div class="likert">
+                        <label><input name="R1" type="radio" value="1" /><span>Nada</span></label>
+                        <label><input name="R2" type="radio" value="2" /><span>Pouco</span></label>
+                        <label><input name="R3" type="radio" value="3" /><span>Indiferente</span></label>
+                        <label><input name="R4" type="radio" value="4" /><span>Gosto</span></label>
+                        <label><input name="R5" type="radio" value="5" /><span>Amo</span></label>
+                    </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="py-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Quanto gostas de metal?</h5>
+                    <p class="card-text">
+
+                    <div class="likert">
+                        <label><input name="M1" type="radio" value="1" /><span>Nada</span></label>
+                        <label><input name="M2" type="radio" value="2" /><span>Pouco</span></label>
+                        <label><input name="M3" type="radio" value="3" /><span>Indiferente</span></label>
+                        <label><input name="M4" type="radio" value="4" /><span>Gosto</span></label>
+                        <label><input name="M5" type="radio" value="5" /><span>Amo</span></label>
+                    </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="py-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Quanto vezes ouves esses géneros por semana?</h5>
+                    <p class="card-text">
+
+                    <div class="likert">
+                        <label><input name="G1" type="radio" value="1" /><span>0</span></lab el>
+                        <label><input name="G2" type="radio" value="2" /><span>1-2</span></label>
+                        <label><input name="G3" type="radio" value="3" /><span>3-4</span></label>
+                        <label><input name="G4" type="radio" value="4" /><span>5-7</span></label>
+                        <label><input name="G5" type="radio" value="5" /><span>8 ou mais</span></label>
+                    </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="py-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Quais os géneros que gostas?</h5>
+                    <p class="card-text">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Rock Progressivo
+                            </label>
+                          </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                            <label class="form-check-label" for="flexCheckDefault2">
+                              Heavy Metal
+                            </label>
+                          </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+                            <label class="form-check-label" for="flexCheckDefault3">
+                              Default checkbox
+                            </label>
+                          </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
+                            <label class="form-check-label" for="flexCheckDefault4">
+                              Default checkbox
+                            </label>
+                          </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault5">
+                            <label class="form-check-label" for="flexCheckDefault5">
+                              Default checkbox
+                            </label>
+                          </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault6">
+                            <label class="form-check-label" for="flexCheckDefault6">
+                              Default checkbox
+                            </label>
+                          </div>
                     </p>
                 </div>
             </div>
