@@ -12,11 +12,21 @@ body {
     left: 50;
 }
 
+#outro {
+    border: none;
+    border-bottom: purple 2px solid;
+    box-shadow: none;
+
+    outline: none;
+}
+
+
+
 main {
     background-color: purple;
 }
 
 .card {
     --bs-card-border-color: purple;
-    --bs-card-color:purple;
+    --bs-card-color: purple;
 }
