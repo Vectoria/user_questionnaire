@@ -20,7 +20,9 @@ body {
     outline: none;
 }
 
-
+#obrigatorio{
+    color: rgb(212, 42, 42);
+}
 
 main {
     background-color: purple;
