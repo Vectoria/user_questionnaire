@@ -19,6 +19,13 @@ body {
 
     outline: none;
 }
+input[type=text]{
+    border: none;
+    border-bottom: purple 2px solid;
+    box-shadow: none;
+
+    outline: none;
+}
 
 #obrigatorio {
     color: rgb(212, 42, 42);
@@ -97,3 +104,13 @@ main {
     --bs-card-border-color: purple;
     --bs-card-color: purple;
 }
+.form-submit-button {
+    background: #0067a200;
+    outline: none;
+    border: none;
+    color: rgb(255, 44, 44);
+    height: 50px;
+    width: 100px;
+    font: bold15px arial,sans-serif;
+    text-shadow: none;
+    }
