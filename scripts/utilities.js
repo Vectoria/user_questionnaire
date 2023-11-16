@@ -1,20 +1,9 @@
-document.addEventListener('DOMContentLoaded', function () {
-    // getting and accessing the checkbox and its label
-    let checkbox = document.getElementById('flexCheckDefault')
-    let next_button = document.getElementById('next_button')
-
-    checkbox.addEventListener('change', function () {
-        next_button.classList.toggle('disabled', !checkbox.checked)
-    })
-})
 function convertLocalStorageToObject() {
     const localStorageData = {};
-
     // Loop through all items in LocalStorage
     for (let i = 0; i < localStorage.length; i++) {
         const key = localStorage.key(i);
         const value = localStorage.getItem(key);
-
         // Parse the value if it's valid JSON
         try {
             localStorageData[key] = JSON.parse(value);
@@ -22,22 +11,18 @@ function convertLocalStorageToObject() {
             localStorageData[key] = value;
         }
     }
-
     return localStorageData;
 }
 
 function exportLocalStorageToJSON(filename) {
     // Convert the data to JSON
     const jsonData = JSON.stringify(convertLocalStorageToObject(), null, 2);
-
     // Create a Blob containing the JSON data
     const blob = new Blob([jsonData], { type: "application/json" });
-
     // Create a download link
     const link = document.createElement("a");
     link.href = URL.createObjectURL(blob);
     link.download = filename || "localStorageData.json";
-
     // Trigger a click event to download the file
     link.click();
 }
