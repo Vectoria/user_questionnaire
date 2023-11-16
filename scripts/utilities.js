@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function () {
         next_button.classList.toggle('disabled', !checkbox.checked)
     })
 })
-
 function convertLocalStorageToObject() {
     const localStorageData = {};
 
