@@ -15,36 +15,122 @@
     <main class="py-3" id="topo">
         <h1 class="text-center text-warning">Rock Head</h1>
     </main>
-    <div class="container">
 
-        <div class="py-3">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Nome</h5>
-                    <p class="card-text">
+    <form action="index.html">
+        <div class="container">
 
+            <h3 class="py-2">Tarefas</h3>
+            <h5>Por favor, realiza as seguintes tarefas e descreva-nos os resultados obtidos.</h5>
 
-
-                        <input type="text" aria-label="First name" class="form-control form-control-lg"
-                            placeholder="1º nome" pattern="[A-Za-z]" id="outro" required>
-
-
-
-                      
-
-
-                    </p>
+            <div class="py-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Recorda a tua experiência relacionada a estes géneros de música.
+                        </h5>
+                        <p class="card-text">
+                            <label for="Bandas_Rock_Metal"> Que bandas de Rock e de Metal gostas mais?</label>
+                            <input type="text" aria-label="First name" class="form-control " placeholder="Escreva aqui"
+                                id="Bandas_Rock_Metal" required>
+                        </p>
+                        <h5 class="card-title"></h5>
+                        <p class="card-text">
+                            <label for="relacao_g">Qual tua relação com estes géneros de música?</label>
+                            <input type="text" aria-label="First name" class="form-control " placeholder="Escreva aqui"
+                                id="relacao_g" required>
+                        </p>
+                        <h5 class="card-title"></h5>
+                        <p class="card-text">
+                            <label for="conversar">Sentes a vontade ao conversar sobre rock/metal com outras pessoas?
+                                Caso
+                                não, comenta o porque.</label>
+                            <input type="text" aria-label="First name" class="form-control " placeholder="Escreva aqui"
+                                id="conversar" required>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
+            <div class="py-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Explore o website principal por 10 minutos.
+                        </h5>
+                        <p class="card-text">
+                            <label for="estetica"> O que achou da estética do website?</label>
+                            <input type="text" aria-label="First name" class="form-control " placeholder="Escreva aqui"
+                                id="estetica" required>
+                        </p>
+                        <h5 class="card-title"></h5>
+                        <p class="card-text">
+                            <label for="novidades">Trouxemos novidades para si?</label>
+                            <input type="text" aria-label="First name" class="form-control " placeholder="Escreva aqui"
+                                id="novidades" required>
+                        </p>
+                        <h5 class="card-title"></h5>
+                        <p class="card-text">
+                            <label for="pesquisa">Conseguiu encontrar tudo que pretendia na sua pesquisa? E foi
+                                conviniente
+                                a pesquisa? </label>
+                            <input type="text" aria-label="First name" class="form-control " placeholder="Escreva aqui"
+                                id="pesquisa" required>
+                        </p>
+                        <h5 class="card-title"></h5>
+                        <p class="card-text">
+                            <label for="bugs_website">Encontrou algum bug? </label>
+                            <input type="text" aria-label="First name" class="form-control " placeholder="Escreva aqui"
+                                id="bugs_website" required>
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-    <footer>
-        <div class="container-fluid text-center py-3">
-            <a type="button" class="btn btn-outline-warning btn-lg" href="questionnaire_p1.html">←</a>
-            <a type="button" class="btn btn-outline-success btn-lg" href="index.html">→</a>
+            <div class="py-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Pesquisa sobre websites semelhantes.
+                        </h5>
+                        <p class="card-text">
+                            <label for="parecido"> Achou que o nosso website difere dos outros? Porque?</label>
+                            <input type="text" aria-label="First name" class="form-control " placeholder="Escreva aqui"
+                                id="parecido" required>
+                        </p>
+                        <h5 class="card-title"></h5>
+                        <p class="card-text">
+                            <label for="melhorar">Cite o que temos para melhorar em relação com outros websites semelhantes.</label>
+                            <input type="text" aria-label="First name" class="form-control " placeholder="Escreva aqui"
+                                id="melhorar" required>
+                        </p>
+                        <h5 class="card-title"></h5>
+                        <p class="card-text">
+                            <label for="usaria">Usaria o nosso website dado a existência doutros websites?</label>
+                            <input type="text" aria-label="First name" class="form-control " placeholder="Escreva aqui"
+                                id="usaria" required>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
         </div>
-    </footer>
+
+        <footer>
+
+            <div class="container-fluid text-center py-3">
+
+                <a type="button" class="btn btn-outline-warning btn-lg" href="questionnaire_p1.html">←</a>
+                <button type="submit" class="btn btn-outline-success btn-lg">
+                    →
+                </button>
+                <!--
+                <a type="button" class="btn btn-outline-success btn-lg" href="index.html">→</a>
+                -->
+            </div>
+        </footer>
+    </form>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
