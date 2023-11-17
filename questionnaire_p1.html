@@ -19,6 +19,7 @@
     <form action="questionnaire_p2.html">
         <div class="container">
 
+            <h3 class="py-2">Caracterização</h3>
 
             <div class="py-3">
                 <div class="card">
@@ -50,7 +51,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Idade</h5>
                         <p class="card-text">
-                            <select class="form-select" id="idade" aria-label="Default select example">
+                            <select class="form-select" id="idade" aria-label="Default select example" required>
                                 <option selected>Seleciona a sua idade</option>
                                 <option value="0-17">Menor de idade</option>
                                 <option value="18-24">18-24 anos</option>
@@ -70,7 +71,7 @@
                         <h5 class="card-title">Seleciona o seu género</h5>
                         <p class="card-text">
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="Genero1">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="Genero1" required>
                             <label class="form-check-label" for="Genero1">
                                 Masculino
                             </label>
@@ -90,8 +91,8 @@
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="Genero4">
                             <label class="form-check-label" for="Genero4">
-                                <input type="text" name="other_reason" id="outro" placeholder="Outro" pattern="[A-Za-z]"
-                                    disabled />
+                                <input type="text" name="other_reason" id="outro" placeholder="Outro"
+                                    pattern="[A-Za-z]{1,32}" disabled />
                             </label>
                         </div>
 
@@ -109,7 +110,7 @@
                         <h5 class="card-title">Quanto gostas de rock?</h5>
                         <p class="card-text">
 
-                        <div class="likert">
+                        <div class="likert" required>
                             <label><input name="rock_gostar" type="radio" value="1" /><span>Nada</span></label>
                             <label><input name="rock_gostar" type="radio" value="2" /><span>Pouco</span></label>
                             <label><input name="rock_gostar" type="radio" value="3" /><span>Indiferente</span></label>
@@ -200,7 +201,7 @@
                         </div>
                         </p>
 
-       
+
                     </div>
                 </div>
             </div>
@@ -257,14 +258,182 @@
                 </div>
             </div>
         </div>
+        <div class="container">
 
+            <h3 class="py-2">Tarefas</h3>
+            <h5>Por favor, realiza as seguintes tarefas e descreva-nos os resultados obtidos.</h5>
+
+            <div class="py-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Recorda a tua experiência relacionada a estes géneros de música.
+                        </h5>
+                        <p class="card-text">
+                            <label for="Bandas_Rock_Metal"> Que bandas de Rock e de Metal gostas mais?</label>
+                            <input type="text" aria-label="First name" class="form-control " placeholder="Escreva aqui"
+                                id="Bandas_Rock_Metal" required>
+                        </p>
+                        <h5 class="card-title"></h5>
+                        <p class="card-text">
+                            <label for="relacao_g">Qual tua relação com estes géneros de música?</label>
+                            <input type="text" aria-label="First name" class="form-control " placeholder="Escreva aqui"
+                                id="relacao_g" required>
+                        </p>
+                        <h5 class="card-title"></h5>
+                        <p class="card-text">
+                            <label for="conversar">Sentes a vontade ao conversar sobre rock/metal com outras pessoas?
+                                Caso
+                                não, comenta o porque.</label>
+                            <input type="text" aria-label="First name" class="form-control " placeholder="Escreva aqui"
+                                id="conversar" required>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="py-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Explore o website principal por 10 minutos.
+                        </h5>
+                        <p class="card-text">
+                            <label for="estetica"> O que achou da estética do website?</label>
+                            <input type="text" aria-label="First name" class="form-control " placeholder="Escreva aqui"
+                                id="estetica" required>
+                        </p>
+                        <h5 class="card-title"></h5>
+                        <p class="card-text">
+                            <label for="novidades">Trouxemos novidades para si?</label>
+                            <input type="text" aria-label="First name" class="form-control " placeholder="Escreva aqui"
+                                id="novidades" required>
+                        </p>
+                        <h5 class="card-title"></h5>
+                        <p class="card-text">
+                            <label for="pesquisa">Conseguiu encontrar tudo que pretendia na sua pesquisa? E foi
+                                conviniente
+                                a pesquisa? </label>
+                            <input type="text" aria-label="First name" class="form-control " placeholder="Escreva aqui"
+                                id="pesquisa" required>
+                        </p>
+                        <h5 class="card-title"></h5>
+                        <p class="card-text">
+                            <label for="bugs_website">Encontrou algum bug? </label>
+                            <input type="text" aria-label="First name" class="form-control " placeholder="Escreva aqui"
+                                id="bugs_website" required>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="py-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Pesquisa sobre websites semelhantes.
+                        </h5>
+                        <p class="card-text">
+                            <label for="parecido"> Achou que o nosso website difere dos outros? Porque?</label>
+                            <input type="text" aria-label="First name" class="form-control " placeholder="Escreva aqui"
+                                id="parecido" required>
+                        </p>
+                        <h5 class="card-title"></h5>
+                        <p class="card-text">
+                            <label for="melhorar">Cite o que temos para melhorar em relação com outros websites
+                                semelhantes.</label>
+                            <input type="text" aria-label="First name" class="form-control " placeholder="Escreva aqui"
+                                id="melhorar" required>
+                        </p>
+                        <h5 class="card-title"></h5>
+                        <p class="card-text">
+                            <label for="usaria">Usaria o nosso website dado a existência doutros websites?</label>
+                            <input type="text" aria-label="First name" class="form-control " placeholder="Escreva aqui"
+                                id="usaria" required>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container">
+
+            <h3 class="py-2">Tarefas</h3>
+            <h5>Por favor, realiza as seguintes tarefas e descreva-nos os resultados obtidos.</h5>
+
+
+            <div class="py-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Para cada par de adjetivos, selecione a opção que melhor descreve a sua
+                            experiência de utilização deste site.</h5>
+                        <p class="card-text">
+                        <div class="row">
+                            <ul class="likerto">
+                                <li> Horrível </li>
+                                <li><input name="adjetivo1" type="radio" value="1" /></li>
+                                <li><input name="adjetivo1" type="radio" value="2" /></li>
+                                <li><input name="adjetivo1" type="radio" value="3" /></li>
+                                <li><input name="adjetivo1" type="radio" value="4" /></li>
+                                <li><input name="adjetivo1" type="radio" value="5" /></li>
+                                <li> Fantástica </li>
+                            </ul>
+                        </div>
+                        </p>
+                        <p class="card-text">
+                        <div class="row">
+                            <ul class="likerto">
+                                <li> Aborrecida </li>
+                                <li><input type="radio" name="adjetivo2" name="guilty" value="1" /></li>
+                                <li><input type="radio" name="adjetivo2" name="guilty" value="2" /></li>
+                                <li><input type="radio" name="adjetivo2" name="guilty" value="3" /></li>
+                                <li><input type="radio" name="adjetivo2" name="guilty" value="4" /></li>
+                                <li><input type="radio" name="adjetivo2" name="guilty" value="5" /></li>
+                                <li> Estimulante </li>
+                            </ul>
+                        </div>
+                        </p>
+                        <p class="card-text">
+                        <div class="row">
+
+                            <div class="row">
+                                <ul class="likerto">
+                                    <li> Frustrante </li>
+                                    <li><input type="radio" name="adjetivo3" value="1" /></li>
+                                    <li><input type="radio" name="adjetivo3" value="2" /></li>
+                                    <li><input type="radio" name="adjetivo3" value="3" /></li>
+                                    <li><input type="radio" name="adjetivo3" value="4" /></li>
+                                    <li><input type="radio" name="adjetivo3" value="5" /></li>
+                                    <li> Gratificante </li>
+                                </ul>
+                            </div>
+                        </div>
+                        </p>
+                        <p class="card-text">
+                        <div class="row">
+                            <ul class="likerto">
+                                <li> Difícil </li>
+                                <li><input type="radio" name="adjetivo4" value="1" /></li>
+                                <li><input type="radio" name="adjetivo4" value="2" /></li>
+                                <li><input type="radio" name="adjetivo4" value="3" /></li>
+                                <li><input type="radio" name="adjetivo4" value="4" /></li>
+                                <li><input type="radio" name="adjetivo4" value="5" /></li>
+                                <li> Fácil </li>
+                            </ul>
+                        </div>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
 
 
         <footer>
-            <div class="container-fluid text-center py-3">
-                <a type="button" class="btn btn-outline-warning btn-lg" href="questionnaire.html">←</a>
+            <div class="container text-center py-3">
                 <button type="submit" class="btn btn-outline-success btn-lg">
-                    →
+                    Submeter
                 </button>
             </div>
         </footer>
