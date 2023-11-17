@@ -94,6 +94,15 @@ input[type=text]{
     background: #f1f1f1;
     outline: lightgrey auto 0.5px;
 }
+.likerto li {
+    float: left;
+    list-style-type: none;
+    margin: 10px;
+  }
+  .likerto li input[type="radio"] {
+    transform: scale(2); /* Ajuste o valor conforme necessário */
+    margin-right: 5px; /* Opcional: Ajuste o espaçamento entre as bolinhas */
+}
 
 
 main {
