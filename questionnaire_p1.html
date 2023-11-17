@@ -361,8 +361,7 @@
 
         <div class="container">
 
-            <h3 class="py-2">Tarefas</h3>
-            <h5>Por favor, realiza as seguintes tarefas e descreva-nos os resultados obtidos.</h5>
+            <h3 class="py-2">Avaliação Global</h3>
 
 
             <div class="py-3">
@@ -374,7 +373,7 @@
                         <div class="row">
                             <ul class="likerto">
                                 <li> Horrível </li>
-                                <li><input name="adjetivo1" type="radio" value="1" required/></li>
+                                <li><input name="adjetivo1" type="radio" value="1" required /></li>
                                 <li><input name="adjetivo1" type="radio" value="2" /></li>
                                 <li><input name="adjetivo1" type="radio" value="3" /></li>
                                 <li><input name="adjetivo1" type="radio" value="4" /></li>
@@ -387,7 +386,7 @@
                         <div class="row">
                             <ul class="likerto">
                                 <li> Aborrecida </li>
-                                <li><input type="radio" name="adjetivo2" name="guilty" value="1" required/></li>
+                                <li><input type="radio" name="adjetivo2" name="guilty" value="1" required /></li>
                                 <li><input type="radio" name="adjetivo2" name="guilty" value="2" /></li>
                                 <li><input type="radio" name="adjetivo2" name="guilty" value="3" /></li>
                                 <li><input type="radio" name="adjetivo2" name="guilty" value="4" /></li>
@@ -402,7 +401,7 @@
                             <div class="row">
                                 <ul class="likerto">
                                     <li> Frustrante </li>
-                                    <li><input type="radio" name="adjetivo3" value="1"required /></li>
+                                    <li><input type="radio" name="adjetivo3" value="1" required /></li>
                                     <li><input type="radio" name="adjetivo3" value="2" /></li>
                                     <li><input type="radio" name="adjetivo3" value="3" /></li>
                                     <li><input type="radio" name="adjetivo3" value="4" /></li>
@@ -416,7 +415,7 @@
                         <div class="row">
                             <ul class="likerto">
                                 <li> Difícil </li>
-                                <li><input type="radio" name="adjetivo4" value="1" required/></li>
+                                <li><input type="radio" name="adjetivo4" value="1" required /></li>
                                 <li><input type="radio" name="adjetivo4" value="2" /></li>
                                 <li><input type="radio" name="adjetivo4" value="3" /></li>
                                 <li><input type="radio" name="adjetivo4" value="4" /></li>
@@ -424,6 +423,113 @@
                                 <li> Fácil </li>
                             </ul>
                         </div>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="py-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Como classifica as perguntas da Caracterização (1 significa “Mau” e 5
+                            significa
+                            “Excelente”)? *</h5>
+                        <p class="card-text">
+                        <ul class="likerto">
+                            <li> Mau </li>
+                            <li><input type="radio" name="classi_caracterizacao" value="1" required /></li>
+                            <li><input type="radio" name="class_caracterizacao" value="2" /></li>
+                            <li><input type="radio" name="class_caracterizacao" value="3" /></li>
+                            <li><input type="radio" name="class_caracterizacao" value="4" /></li>
+                            <li><input type="radio" name="class_caracterizacao" value="5" /></li>
+                            <li> Excelente
+                            </li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="py-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Como classifica as perguntas da Tarefas (1 significa “Mau” e 5
+                            significa
+                            “Excelente”)? *</h5>
+                        <p class="card-text">
+                        <ul class="likerto">
+                            <li> Mau </li>
+                            <li><input type="radio" name="classi_tarefas" value="1" required /></li>
+                            <li><input type="radio" name="class_tarefas" value="2" /></li>
+                            <li><input type="radio" name="class_tarefas" value="3" /></li>
+                            <li><input type="radio" name="class_tarefas" value="4" /></li>
+                            <li><input type="radio" name="class_tarefas" value="5" /></li>
+                            <li> Excelente
+                            </li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="py-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Como classifica as perguntas da Avaliação Global (1 significa
+                            “Mau” e 5 significa
+                            “Excelente”)? *</h5>
+                        <p class="card-text">
+                        <ul class="likerto">
+                            <li> Mau </li>
+                            <li><input type="radio" name="classi_global" value="1" required /></li>
+                            <li><input type="radio" name="class_global" value="2" /></li>
+                            <li><input type="radio" name="class_global" value="3" /></li>
+                            <li><input type="radio" name="class_global" value="4" /></li>
+                            <li><input type="radio" name="class_global" value="5" /></li>
+                            <li> Excelente
+                            </li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="py-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Como classifica o website no geral (1 significa
+                            “Mau” e 5 significa
+                            “Excelente”)? *</h5>
+                        <p class="card-text">
+                        <ul class="likerto">
+                            <li> Mau </li>
+                            <li><input type="radio" name="classi_website" value="1" required /></li>
+                            <li><input type="radio" name="class_website" value="2" /></li>
+                            <li><input type="radio" name="class_website" value="3" /></li>
+                            <li><input type="radio" name="class_website" value="4" /></li>
+                            <li><input type="radio" name="class_website" value="5" /></li>
+                            <li> Excelente
+                            </li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            <div class="py-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Como classifica o questionário no geral (1 significa
+                            “Mau” e 5 significa
+                            “Excelente”)? *</h5>
+                        <p class="card-text">
+                        <ul class="likerto">
+                            <li> Mau </li>
+                            <li><input type="radio" name="classi_questionario" value="1" required /></li>
+                            <li><input type="radio" name="class_questionario" value="2" /></li>
+                            <li><input type="radio" name="class_questionario" value="3" /></li>
+                            <li><input type="radio" name="class_questionario" value="4" /></li>
+                            <li><input type="radio" name="class_questionario" value="5" /></li>
+                            <li> Excelente
+                            </li>
+                        </ul>
                         </p>
                     </div>
                 </div>
