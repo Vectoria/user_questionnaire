@@ -15,237 +15,250 @@
     <main class="py-3" id="topo">
         <h1 class="text-center text-warning">Rock Head</h1>
     </main>
-    <div class="container">
+    <form action="questionnaire_p2.html">
+        <div class="container">
 
 
-        <div class="py-3">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Nome</h5>
-                    <p class="card-text">
-                    <div class="input-group py-2">
-                        <span class="input-group-text">Insira o seu nome</span>
-                        <div class="form-floating">
-                            <input type="text" aria-label="First name" class="form-control form-control-lg"
-                                id="floatingInput1" placeholder="1º nome"  pattern="[A-Za-z]" required>
-                            <label for="floatingInput1">1º nome</label>
+            <div class="py-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Nome</h5>
+                        <p class="card-text">
+                        <div class="input-group py-2">
+                            <span class="input-group-text">Insira o seu nome</span>
+                            <div class="form-floating">
+                                <input type="text" aria-label="First name" class="form-control form-control-lg"
+                                    id="nome1" placeholder="1º nome" pattern="[A-Za-z]{1,32}" required>
+                                <label for="nome1">1º nome</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="text" aria-label="Last name" class="form-control form-control-lg"
+                                    id="sobrenome2" placeholder="Sobrenome" pattern="[A-Za-z]{1,32}" required>
+                                <label for="sobrenome2">Sobrenome</label>
+                            </div>
                         </div>
-                        <div class="form-floating">
-                            <input type="text" aria-label="Last name" class="form-control form-control-lg"
-                                id="floatingInput2" placeholder="Sobrenome" pattern="[A-Za-z]" required>
-                            <label for="floatingInput2">Sobrenome</label>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="py-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Idade</h5>
+                        <p class="card-text">
+                            <select class="form-select" id="idade" aria-label="Default select example">
+                                <option selected>Seleciona a sua idade</option>
+                                <option value="0-17">Menor de idade</option>
+                                <option value="18-24">18-24 anos</option>
+                                <option value="25-54">25-54 anos</option>
+                                <option value="55-64">55-64 anos</option>
+                                <option value="64-x">64 ou mais anos</option>
+                            </select>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="py-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Seleciona o seu género</h5>
+                        <p class="card-text">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="Genero1">
+                            <label class="form-check-label" for="Genero1">
+                                Masculino
+                            </label>
                         </div>
-                    </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="Genero2">
+                            <label class="form-check-label" for="Genero2">
+                                Femenino
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="Genero3">
+                            <label class="form-check-label" for="Genero3">
+                                Não Binário
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="Genero4">
+                            <label class="form-check-label" for="Genero4">
+                                <input type="text" name="other_reason" id="outro" placeholder="Outro" pattern="[A-Za-z]"
+                                    disabled />
+                            </label>
+                        </div>
 
-                    </p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="py-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Quanto gostas de rock?</h5>
+                        <p class="card-text">
+
+                        <div class="likert">
+                            <label><input name="rock_gostar" type="radio" value="1" /><span>Nada</span></label>
+                            <label><input name="rock_gostar" type="radio" value="2" /><span>Pouco</span></label>
+                            <label><input name="rock_gostar" type="radio" value="3" /><span>Indiferente</span></label>
+                            <label><input name="rock_gostar" type="radio" value="4" /><span>Gosto</span></label>
+                            <label><input name="rock_gostar" type="radio" value="5" /><span>Gosto muito</span></label>
+                        </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="py-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Quanto gostas de metal?</h5>
+                        <p class="card-text">
+
+                        <div class="likert">
+                            <label><input name="metal-gostar" type="radio" value="1" /><span>Nada</span></label>
+                            <label><input name="metal-gostar" type="radio" value="2" /><span>Pouco</span></label>
+                            <label><input name="metal-gostar" type="radio" value="3" /><span>Indiferente</span></label>
+                            <label><input name="metal-gostar" type="radio" value="4" /><span>Gosto</span></label>
+                            <label><input name="metal-gostar" type="radio" value="5" /><span>Gosto muito</span></label>
+                        </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="py-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Quantas vezes ouves esses géneros por semana?</h5>
+                        <p class="card-text">
+
+                        <div class="likert">
+                            <label><input name="ouvir_semana" type="radio" value="1" /><span>0</span></label>
+                            <label><input name="ouvir_semana" type="radio" value="2" /><span>1-2</span></label>
+                            <label><input name="ouvir_semana" type="radio" value="3" /><span>3-4</span></label>
+                            <label><input name="ouvir_semana" type="radio" value="4" /><span>5-7</span></label>
+                            <label><input name="ouvir_semana" type="radio" value="5" /><span>8 ou mais</span></label>
+                        </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="py-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Que outros sub-géneros do rock gostas?</h5>
+                        <p class="card-text">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Rock Progressivo" id="btnR1"
+                                name="rock_g1">
+                            <label class="form-check-label" for="btnR1">
+                                Rock Progressivo
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Indie Rock" id="btnR2"
+                                name="rock_g2">
+                            <label class="form-check-label" for="btnR2">
+                                Indie Rock
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Rock Clássico" id="btnR3"
+                                name="rock_g3">
+                            <label class="form-check-label" for="btnR3">
+                                Rock Clássico
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Grunge" id="btnR4" name="rock_g4">
+                            <label class="form-check-label" for="btnR4">
+                                Grunge
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Punk Rock" id="btnR5" name="rock_g5">
+                            <label class="form-check-label" for="btnR5">
+                                Punk Rock
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Shoegaze" id="btnR6" name="rock_g6">
+                            <label class="form-check-label" for="btnR6">
+                                Shoegaze
+                            </label>
+                        </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="py-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Que outros sub-géneros do Metal gostas?</h5>
+                        <p class="card-text">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Power Metal" id="btnM1"
+                                name="metal_g1">
+                            <label class="form-check-label" for="btnM1">
+                                Power Metal
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Black Metal" id="btnM2"
+                                name="metal_g2">
+                            <label class="form-check-label" for="btnM2">
+                                Black Metal
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Nu Metal" id="btnM3" name="metal_g3">
+                            <label class="form-check-label" for="btnM3">
+                                Nu Metal
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Metal Ambiente" id="btnM4"
+                                name="metal_g4">
+                            <label class="form-check-label" for="btnM4">
+                                Metal Ambiente
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Folk Metal" id="btnM5"
+                                name="metal_g5">
+                            <label class="form-check-label" for="btnM5">
+                                Folk Metal
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Death Metal" id="btnM6"
+                                name="metal_g6">
+                            <label class="form-check-label" for="btnM6">
+                                Death Metal
+                            </label>
+                        </div>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="py-3">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Idade</h5>
-                    <p class="card-text">
-                        <select class="form-select" id="idade" aria-label="Default select example">
-                            <option selected>Seleciona a sua idade</option>
-                            <option value="0-17">Menor de idade</option>
-                            <option value="18-24">18-24 anos</option>
-                            <option value="25-54">25-54 anos</option>
-                            <option value="55-64">55-64 anos</option>
-                            <option value="64-x">64 ou mais anos</option>
-                        </select>
-                    </p>
-                </div>
+
+        <footer>
+            <div class="container-fluid text-center py-3">
+                <a type="button" class="btn btn-outline-warning btn-lg" href="questionnaire.html">←</a>
+                <button type="submit" class="btn btn-outline-success btn-lg">
+                    →
+                </button>
             </div>
-        </div>
-
-        <div class="py-3">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Seleciona o seu género</h5>
-                    <p class="card-text">
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="Genero1">
-                        <label class="form-check-label" for="Genero1">
-                            Masculino
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="Genero2">
-                        <label class="form-check-label" for="Genero2">
-                            Femenino
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="Genero3">
-                        <label class="form-check-label" for="Genero3">
-                            Não Binário
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="Genero4">
-                        <label class="form-check-label" for="Genero4">
-                            <input type="text" name="other_reason" id="outro" placeholder="Outro"   pattern="[A-Za-z]" disabled />
-                        </label>
-                    </div>
-
-                    </p>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="py-3">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Quanto gostas de rock?</h5>
-                    <p class="card-text">
-
-                    <div class="likert">
-                        <label><input name="rock_gostar" type="radio" value="1" /><span>Nada</span></label>
-                        <label><input name="rock_gostar" type="radio" value="2" /><span>Pouco</span></label>
-                        <label><input name="rock_gostar" type="radio" value="3" /><span>Indiferente</span></label>
-                        <label><input name="rock_gostar" type="radio" value="4" /><span>Gosto</span></label>
-                        <label><input name="rock_gostar" type="radio" value="5" /><span>Gosto muito</span></label>
-                    </div>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="py-3">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Quanto gostas de metal?</h5>
-                    <p class="card-text">
-
-                    <div class="likert">
-                        <label><input name="metal-gostar" type="radio" value="1" /><span>Nada</span></label>
-                        <label><input name="metal-gostar" type="radio" value="2" /><span>Pouco</span></label>
-                        <label><input name="metal-gostar" type="radio" value="3" /><span>Indiferente</span></label>
-                        <label><input name="metal-gostar" type="radio" value="4" /><span>Gosto</span></label>
-                        <label><input name="metal-gostar" type="radio" value="5" /><span>Gosto muito</span></label>
-                    </div>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="py-3">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Quantas vezes ouves esses géneros por semana?</h5>
-                    <p class="card-text">
-
-                    <div class="likert">
-                        <label><input name="ouvir_semana" type="radio" value="1" /><span>0</span></label>
-                        <label><input name="ouvir_semana" type="radio" value="2" /><span>1-2</span></label>
-                        <label><input name="ouvir_semana" type="radio" value="3" /><span>3-4</span></label>
-                        <label><input name="ouvir_semana" type="radio" value="4" /><span>5-7</span></label>
-                        <label><input name="ouvir_semana" type="radio" value="5" /><span>8 ou mais</span></label>
-                    </div>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="py-3">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Que outros sub-géneros do rock gostas?</h5>
-                    <p class="card-text">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="Rock Progressivo" id="btnR1" name="rock_g1">
-                        <label class="form-check-label" for="btnR1">
-                            Rock Progressivo
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="Indie Rock" id="btnR2" name="rock_g2">
-                        <label class="form-check-label" for="btnR2">
-                            Indie Rock
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="Rock Clássico" id="btnR3" name="rock_g3">
-                        <label class="form-check-label" for="btnR3">
-                            Rock Clássico
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="Grunge" id="btnR4" name="rock_g4">
-                        <label class="form-check-label" for="btnR4">
-                            Grunge
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="Punk Rock" id="btnR5" name="rock_g5">
-                        <label class="form-check-label" for="btnR5">
-                            Punk Rock
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="Shoegaze" id="btnR6" name="rock_g6">
-                        <label class="form-check-label" for="btnR6">
-                            Shoegaze
-                        </label>
-                    </div>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="py-3">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Que outros sub-géneros do Metal gostas?</h5>
-                    <p class="card-text">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="Power Metal" id="btnM1" name="metal_g1">
-                        <label class="form-check-label" for="btnM1">
-                            Power Metal
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="Black Metal" id="btnM2" name="metal_g2">
-                        <label class="form-check-label" for="btnM2">
-                            Black Metal
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="Nu Metal" id="btnM3" name="metal_g3">
-                        <label class="form-check-label" for="btnM3">
-                            Nu Metal
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="Metal Ambiente" id="btnM4" name="metal_g4">
-                        <label class="form-check-label" for="btnM4">
-                            Metal Ambiente
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="Folk Metal" id="btnM5" name="metal_g5">
-                        <label class="form-check-label" for="btnM5">
-                            Folk Metal
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="Death Metal" id="btnM6" name="metal_g6">
-                        <label class="form-check-label" for="btnM6">
-                            Death Metal
-                        </label>
-                    </div>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <footer>
-        <div class="container-fluid text-center py-3">
-            <a type="button" class="btn btn-outline-warning btn-lg" href="questionnaire.html">←</a>
-            <a type="button" class="btn btn-outline-success btn-lg" href="questionnaire_p2.html">→</a>
-        </div>
-    </footer>
+        </footer>
+    </form>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
