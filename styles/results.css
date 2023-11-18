@@ -23,3 +23,9 @@ body {
 main {
     background-color: purple;
 }
+#baixo {
+    position: absolute;
+    bottom: 0;
+    right: 50;
+    left: 50;
+}
