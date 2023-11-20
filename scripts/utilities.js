@@ -9,8 +9,29 @@ function validateForm() {
     let rock_gostar = document.getElementsByName('rock_gostar').value
     let metal_gostar = document.getElementsByName('metal-gostar').value
     let ouvir_semana = document.getElementsByName('ouvir_semana').value
+    let sub_rock = document.getElementsByName('rockG').value
+    let sub_metal = document.getElementsByName('metalG').value
+    let bandas_rock_metal = document.getElementById('Bandas_Rock_Metal').value
+    let relacao_g = document.getElementById('relacao_g').value
+    let conversar = document.getElementById('conversar').value
+    let estetica = document.getElementById('estetica').value
+    let novidades = document.getElementById('novidades').value
+    let pesquisa = document.getElementById('pesquisa').value
+    let bugs_website = document.getElementById('bugs_website').value
+    let parecido = document.getElementById('parecido').value
+    let melhorar = document.getElementById('melhorar').value
+    let usaria = document.getElementById('usaria').value
+    let adjetivo1 = document.getElementsByName('adjetivo1').value
+    let adjetivo2 = document.getElementsByName('adjetivo2').value
+    let adjetivo3 = document.getElementsByName('adjetivo3').value
+    let adjetivo4 = document.getElementsByName('adjetivo4').value
+    let class_caracterizacao = document.getElementsByName('class_caracterizacao').value
+    let class_tarefas = document.getElementsByName('class_tarefas').value
+    let class_global = document.getElementsByName('class_global').value
+    let class_website = document.getElementsByName('class_website').value
+    let class_questionario = document.getElementsByName('class_questionario').value
 
-    if (!nome1 || !sobrenome2 || !idade || !genero1 || !genero2 || !genero3 || !genero4 || !rock_gostar || !metal_gostar || !ouvir_semana) {
+    if (!nome1 || !sobrenome2 || !idade || !genero1 || !genero2 || !genero3 || !genero4 || !rock_gostar || !metal_gostar || !ouvir_semana || !sub_rock || !sub_metal || !bandas_rock_metal || !relacao_g || !conversar || !estetica || !novidades || !pesquisa || !bugs_website || !parecido || !melhorar || !usaria || !adjetivo1 || !adjetivo2 || !adjetivo3 || !adjetivo4 || !class_caracterizacao || !class_tarefas || !class_global || !class_website || !class_questionario) {
         alert('Please fill in all the required fields.')
         return;
     }
@@ -30,6 +51,27 @@ function storeValuesInLocalStorage() {
         rock_gostar: document.getElementsByName('rock_gostar').value,
         metal_gostar: document.getElementsByName('metal-gostar').value,
         ouvir_semana: document.getElementsByName('ouvir_semana').value,
+        sub_rock: document.getElementsByName('rockG').value,
+        sub_metal: document.getElementsByName('metalG').value,
+        bandas_rock_metal: document.getElementById('Bandas_Rock_Metal').value,
+        relacao_g: document.getElementById('relacao_g').value,
+        conversar: document.getElementById('conversar').value,
+        estetica: document.getElementById('estetica').value,
+        novidades: document.getElementById('novidades').value,
+        pesquisa: document.getElementById('pesquisa').value,
+        bugs_website: document.getElementById('bugs_website').value,
+        parecido: document.getElementById('parecido').value,
+        melhorar: document.getElementById('melhorar').value,
+        usaria: document.getElementById('usaria').value,
+        adjetivo1: document.getElementsByName('adjetivo1').value,
+        adjetivo2: document.getElementsByName('adjetivo2').value,
+        adjetivo3: document.getElementsByName('adjetivo3').value,
+        adjetivo4: document.getElementsByName('adjetivo4').value,
+        class_caracterizacao: document.getElementsByName('class_caracterizacao').value,
+        class_tarefas: document.getElementsByName('class_tarefas').value,
+        class_global: document.getElementsByName('class_global').value,
+        class_website: document.getElementsByName('class_website').value,
+        class_questionario: document.getElementsByName('class_questionario').value
     }
 
     let timestamp = new Date().getTime(); // Generate a timestamp for a unique key
