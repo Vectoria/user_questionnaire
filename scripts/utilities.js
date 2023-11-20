@@ -2,10 +2,7 @@ function validateForm() {
     let nome1 = document.getElementById('nome1').value
     let sobrenome2 = document.getElementById('sobrenome2').value
     let idade = document.getElementById('idade').value
-    let genero1 = document.getElementById('Genero1').value
-    let genero2 = document.getElementById('Genero2').value
-    let genero3 = document.getElementById('Genero3').value
-    let genero4 = document.getElementById('Genero4').value
+    let gender = document.getElementsByName('gender').value
     let rock_gostar = document.getElementsByName('rock_gostar').value
     let metal_gostar = document.getElementsByName('metal-gostar').value
     let ouvir_semana = document.getElementsByName('ouvir_semana').value
@@ -31,7 +28,7 @@ function validateForm() {
     let class_website = document.getElementsByName('class_website').value
     let class_questionario = document.getElementsByName('class_questionario').value
 
-    if (!nome1 || !sobrenome2 || !idade || !genero1 || !genero2 || !genero3 || !genero4 || !rock_gostar || !metal_gostar || !ouvir_semana || !sub_rock || !sub_metal || !bandas_rock_metal || !relacao_g || !conversar || !estetica || !novidades || !pesquisa || !bugs_website || !parecido || !melhorar || !usaria || !adjetivo1 || !adjetivo2 || !adjetivo3 || !adjetivo4 || !class_caracterizacao || !class_tarefas || !class_global || !class_website || !class_questionario) {
+    if (!nome1 || !sobrenome2 || !idade || !gender || !rock_gostar || !metal_gostar || !ouvir_semana || !sub_rock || !sub_metal || !bandas_rock_metal || !relacao_g || !conversar || !estetica || !novidades || !pesquisa || !bugs_website || !parecido || !melhorar || !usaria || !adjetivo1 || !adjetivo2 || !adjetivo3 || !adjetivo4 || !class_caracterizacao || !class_tarefas || !class_global || !class_website || !class_questionario) {
         alert('Please fill in all the required fields.')
         return;
     }
@@ -44,10 +41,7 @@ function storeValuesInLocalStorage() {
         nome1: document.getElementById('nome1').value,
         sobrenome2: document.getElementById('sobrenome2').value,
         idade: document.getElementById('idade').value,
-        genero1: document.getElementById('Genero1').value,
-        genero2: document.getElementById('Genero2').value,
-        genero3: document.getElementById('Genero3').value,
-        genero4: document.getElementById('Genero4').value,
+        gender: document.getElementsByName('gender').value,
         rock_gostar: document.getElementsByName('rock_gostar').value,
         metal_gostar: document.getElementsByName('metal-gostar').value,
         ouvir_semana: document.getElementsByName('ouvir_semana').value,
