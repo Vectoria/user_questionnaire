@@ -27,8 +27,8 @@ function validateForm() {
     let class_questionario = document.getElementsByName('class_questionario').value
 
     if (!nome1 || !sobrenome2 || !idade || !gender || !rock_gostar || !metal_gostar || !ouvir_semana || !bandas_rock_metal || !relacao_g || !conversar || !estetica || !novidades || !pesquisa || !bugs_website || !parecido || !melhorar || !usaria || !adjetivo1 || !adjetivo2 || !adjetivo3 || !adjetivo4 || !class_caracterizacao || !class_tarefas || !class_global || !class_website || !class_questionario) {
-        alert('Please fill in all the required fields.')
-        return
+        console.log('Please fill in all the required fields.')
+        //return
     }
     storeValuesInLocalStorage()
 }
@@ -187,7 +187,7 @@ function storeValuesInLocalStorage() {
 
     localStorage.setItem(timestamp, JSON.stringify(formData))
 
-    alert('Form data has been successfully stored in local storage.')
+    console.log('Form data has been successfully stored in local storage.')
 }
 
 function convertLocalStorageToObject() {
@@ -222,7 +222,7 @@ function exportLocalStorageToJSON(filename) {
 function importLocalStorageFromJSON(inputElement) {
     const file = inputElement.files[0];
     if (!file) {
-        alert("Please select a JSON file.");
+        console.log("Please select a JSON file.");
         return;
     }
 
@@ -247,9 +247,9 @@ function importLocalStorageFromJSON(inputElement) {
                     localStorage.setItem(key, value);
                 }
             }
-            alert("LocalStorage data restored successfully.");
+            console.log("LocalStorage data restored successfully.");
         } catch (error) {
-            alert("Error restoring LocalStorage data. Make sure the selected file is a valid JSON file.");
+            console.log("Error restoring LocalStorage data. Make sure the selected file is a valid JSON file.");
         }
     };
 
