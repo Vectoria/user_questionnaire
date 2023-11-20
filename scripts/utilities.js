@@ -28,11 +28,11 @@ function validateForm() {
     let class_website = document.getElementsByName('class_website').value
     let class_questionario = document.getElementsByName('class_questionario').value
 
-    if (!nome1 || !sobrenome2 || !idade || !gender || !rock_gostar || !metal_gostar || !ouvir_semana || !sub_rock || !sub_metal || !bandas_rock_metal || !relacao_g || !conversar || !estetica || !novidades || !pesquisa || !bugs_website || !parecido || !melhorar || !usaria || !adjetivo1 || !adjetivo2 || !adjetivo3 || !adjetivo4 || !class_caracterizacao || !class_tarefas || !class_global || !class_website || !class_questionario) {
+    if (!nome1 || !sobrenome2 || !idade || !gender || !rock_gostar || !metal_gostar || !ouvir_semana || !bandas_rock_metal || !relacao_g || !conversar || !estetica || !novidades || !pesquisa || !bugs_website || !parecido || !melhorar || !usaria || !adjetivo1 || !adjetivo2 || !adjetivo3 || !adjetivo4 || !class_caracterizacao || !class_tarefas || !class_global || !class_website || !class_questionario) {
         alert('Please fill in all the required fields.')
-        return;
+        return
     }
-    storeValuesInLocalStorage();
+    storeValuesInLocalStorage()
 }
 
 function storeValuesInLocalStorage() {
