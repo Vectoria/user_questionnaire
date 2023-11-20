@@ -6,8 +6,6 @@ function validateForm() {
     let rock_gostar = document.getElementsByName('rock_gostar').value
     let metal_gostar = document.getElementsByName('metal-gostar').value
     let ouvir_semana = document.getElementsByName('ouvir_semana').value
-    let sub_rock = document.getElementsByName('rockG').value
-    let sub_metal = document.getElementsByName('metalG').value
     let bandas_rock_metal = document.getElementById('Bandas_Rock_Metal').value
     let relacao_g = document.getElementById('relacao_g').value
     let conversar = document.getElementById('conversar').value
