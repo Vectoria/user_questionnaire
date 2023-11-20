@@ -36,7 +36,6 @@ function validateForm() {
 }
 
 function storeValuesInLocalStorage() {
-    // Access form elements and store their values in local storage
     let formData = {
         nome1: document.getElementById('nome1').value,
         sobrenome2: document.getElementById('sobrenome2').value,
