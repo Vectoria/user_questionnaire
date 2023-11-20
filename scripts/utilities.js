@@ -68,7 +68,7 @@ function storeValuesInLocalStorage() {
     let genderRadios = document.getElementsByName("gender")
     for (let i = 0; i < genderRadios.length; i++) {
         if (genderRadios[i].checked) {
-            gender = genderRadios[i].nextElementSibling.textContent.trim()
+            formData.gender = genderRadios[i].nextElementSibling.textContent.trim()
             break
         }
     }
@@ -76,7 +76,7 @@ function storeValuesInLocalStorage() {
     let rockGostarRadios = document.getElementsByName("rock_gostar")
     for (let i = 0; i < rockGostarRadios.length; i++) {
         if (rockGostarRadios[i].checked) {
-            rock_gostar = rockGostarRadios[i].value
+            formData.rock_gostar = rockGostarRadios[i].value
             break
         }
     }
@@ -84,7 +84,7 @@ function storeValuesInLocalStorage() {
     let metalGostarRadios = document.getElementsByName("metal-gostar")
     for (let i = 0; i < metalGostarRadios.length; i++) {
         if (metalGostarRadios[i].checked) {
-            metal_gostar = metalGostarRadios[i].value
+            formData.metal_gostar = metalGostarRadios[i].value
             break
         }
     }
@@ -92,7 +92,7 @@ function storeValuesInLocalStorage() {
     let ouvirSemanaRadios = document.getElementsByName("ouvir_semana")
     for (let i = 0; i < ouvirSemanaRadios.length; i++) {
         if (ouvirSemanaRadios[i].checked) {
-            ouvir_semana = ouvirSemanaRadios[i].value
+            formData.ouvir_semana = ouvirSemanaRadios[i].value
             break
         }
     }
@@ -100,21 +100,21 @@ function storeValuesInLocalStorage() {
     let rockGCheckboxes = document.getElementsByName("rockG")
     for (let i = 0; i < rockGCheckboxes.length; i++) {
         if (rockGCheckboxes[i].checked) {
-            sub_rock.push(rockGCheckboxes[i].value)
+            formData.sub_rock.push(rockGCheckboxes[i].value)
         }
     }
 
     let metalGCheckboxes = document.getElementsByName("metalG")
     for (let i = 0; i < metalGCheckboxes.length; i++) {
         if (metalGCheckboxes[i].checked) {
-            sub_metal.push(metalGCheckboxes[i].value)
+            formData.sub_metal.push(metalGCheckboxes[i].value)
         }
     }
 
     let adjetivo1Radios = document.getElementsByName("adjetivo1")
     for (let i = 0; i < adjetivo1Radios.length; i++) {
         if (adjetivo1Radios[i].checked) {
-            adjetivo1 = adjetivo1Radios[i].value
+            formData.adjetivo1 = adjetivo1Radios[i].value
             break
         }
     }
@@ -122,7 +122,7 @@ function storeValuesInLocalStorage() {
     let adjetivo2Radios = document.getElementsByName("adjetivo2")
     for (let i = 0; i < adjetivo2Radios.length; i++) {
         if (adjetivo2Radios[i].checked) {
-            adjetivo2 = adjetivo2Radios[i].value
+            formData.adjetivo2 = adjetivo2Radios[i].value
             break
         }
     }
@@ -130,7 +130,7 @@ function storeValuesInLocalStorage() {
     let adjetivo3Radios = document.getElementsByName("adjetivo3")
     for (let i = 0; i < adjetivo3Radios.length; i++) {
         if (adjetivo3Radios[i].checked) {
-            adjetivo1 = adjetivo3Radios[i].value
+            formData.adjetivo3 = adjetivo3Radios[i].value
             break
         }
     }
@@ -138,7 +138,7 @@ function storeValuesInLocalStorage() {
     let adjetivo4Radios = document.getElementsByName("adjetivo4")
     for (let i = 0; i < adjetivo4Radios.length; i++) {
         if (adjetivo4Radios[i].checked) {
-            adjetivo4 = adjetivo4Radios[i].value
+            formData.adjetivo4 = adjetivo4Radios[i].value
             break
         }
     }
@@ -146,7 +146,7 @@ function storeValuesInLocalStorage() {
     let classCaracterizacaoRadios = document.getElementsByName("class_caracterizacao")
     for (let i = 0; i < classCaracterizacaoRadios.length; i++) {
         if (classCaracterizacaoRadios[i].checked) {
-            class_caracterizacao = classCaracterizacaoRadios[i].value
+            formData.class_caracterizacao = classCaracterizacaoRadios[i].value
             break
         }
     }
@@ -154,7 +154,7 @@ function storeValuesInLocalStorage() {
     let classTarefasRadios = document.getElementsByName("class_tarefas")
     for (let i = 0; i < classTarefasRadios.length; i++) {
         if (classTarefasRadios[i].checked) {
-            class_tarefas = classTarefasRadios[i].value
+            formData.class_tarefas = classTarefasRadios[i].value
             break
         }
     }
@@ -162,7 +162,7 @@ function storeValuesInLocalStorage() {
     let classGlobalRadios = document.getElementsByName("class_global")
     for (let i = 0; i < classGlobalRadios.length; i++) {
         if (classGlobalRadios[i].checked) {
-            class_global = classGlobalRadios[i].value
+            formData.class_global = classGlobalRadios[i].value
             break
         }
     }
@@ -170,7 +170,7 @@ function storeValuesInLocalStorage() {
     let classWebsiteRadios = document.getElementsByName("class_website")
     for (let i = 0; i < classWebsiteRadios.length; i++) {
         if (classWebsiteRadios[i].checked) {
-            class_website = classWebsiteRadios[i].value
+            formData.class_website = classWebsiteRadios[i].value
             break
         }
     }
@@ -178,7 +178,7 @@ function storeValuesInLocalStorage() {
     let classQuestionarioRadios = document.getElementsByName("class_questionario")
     for (let i = 0; i < classQuestionarioRadios.length; i++) {
         if (classQuestionarioRadios[i].checked) {
-            class_questionario = classQuestionarioRadios[i].value
+            formData.class_questionario = classQuestionarioRadios[i].value
             break
         }
     }
