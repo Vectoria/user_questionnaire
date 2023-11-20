@@ -41,12 +41,12 @@ function storeValuesInLocalStorage() {
         nome1: document.getElementById('nome1').value,
         sobrenome2: document.getElementById('sobrenome2').value,
         idade: document.getElementById('idade').value,
-        gender: document.getElementsByName('gender').value,
-        rock_gostar: document.getElementsByName('rock_gostar').value,
-        metal_gostar: document.getElementsByName('metal-gostar').value,
-        ouvir_semana: document.getElementsByName('ouvir_semana').value,
-        sub_rock: document.getElementsByName('rockG').value,
-        sub_metal: document.getElementsByName('metalG').value,
+        gender: "",
+        rock_gostar: "",
+        metal_gostar: "",
+        ouvir_semana: "",
+        sub_rock: [],
+        sub_metal: [],
         bandas_rock_metal: document.getElementById('Bandas_Rock_Metal').value,
         relacao_g: document.getElementById('relacao_g').value,
         conversar: document.getElementById('conversar').value,
@@ -57,24 +57,138 @@ function storeValuesInLocalStorage() {
         parecido: document.getElementById('parecido').value,
         melhorar: document.getElementById('melhorar').value,
         usaria: document.getElementById('usaria').value,
-        adjetivo1: document.getElementsByName('adjetivo1').value,
-        adjetivo2: document.getElementsByName('adjetivo2').value,
-        adjetivo3: document.getElementsByName('adjetivo3').value,
-        adjetivo4: document.getElementsByName('adjetivo4').value,
-        class_caracterizacao: document.getElementsByName('class_caracterizacao').value,
-        class_tarefas: document.getElementsByName('class_tarefas').value,
-        class_global: document.getElementsByName('class_global').value,
-        class_website: document.getElementsByName('class_website').value,
-        class_questionario: document.getElementsByName('class_questionario').value
+        adjetivo1: "",
+        adjetivo2: "",
+        adjetivo3: "",
+        adjetivo4: "",
+        class_caracterizacao: "",
+        class_tarefas: "",
+        class_global: "",
+        class_website: "",
+        class_questionario: ""
     }
 
-    let timestamp = new Date().getTime(); // Generate a timestamp for a unique key
+    let genderRadios = document.getElementsByName("gender")
+    for (let i = 0; i < genderRadios.length; i++) {
+        if (genderRadios[i].checked) {
+            gender = genderRadios[i].nextElementSibling.textContent.trim()
+            break
+        }
+    }
 
-    // Store data in local storage
+    let rockGostarRadios = document.getElementsByName("rock_gostar")
+    for (let i = 0; i < rockGostarRadios.length; i++) {
+        if (rockGostarRadios[i].checked) {
+            rock_gostar = rockGostarRadios[i].value
+            break
+        }
+    }
+
+    let metalGostarRadios = document.getElementsByName("metal-gostar")
+    for (let i = 0; i < metalGostarRadios.length; i++) {
+        if (metalGostarRadios[i].checked) {
+            metal_gostar = metalGostarRadios[i].value
+            break
+        }
+    }
+
+    let ouvirSemanaRadios = document.getElementsByName("ouvir_semana")
+    for (let i = 0; i < ouvirSemanaRadios.length; i++) {
+        if (ouvirSemanaRadios[i].checked) {
+            ouvir_semana = ouvirSemanaRadios[i].value
+            break
+        }
+    }
+
+    let rockGCheckboxes = document.getElementsByName("rockG")
+    for (let i = 0; i < rockGCheckboxes.length; i++) {
+        if (rockGCheckboxes[i].checked) {
+            sub_rock.push(rockGCheckboxes[i].value)
+        }
+    }
+
+    let metalGCheckboxes = document.getElementsByName("metalG")
+    for (let i = 0; i < metalGCheckboxes.length; i++) {
+        if (metalGCheckboxes[i].checked) {
+            sub_metal.push(metalGCheckboxes[i].value)
+        }
+    }
+
+    let adjetivo1Radios = document.getElementsByName("adjetivo1")
+    for (let i = 0; i < adjetivo1Radios.length; i++) {
+        if (adjetivo1Radios[i].checked) {
+            adjetivo1 = adjetivo1Radios[i].value
+            break
+        }
+    }
+
+    let adjetivo2Radios = document.getElementsByName("adjetivo2")
+    for (let i = 0; i < adjetivo2Radios.length; i++) {
+        if (adjetivo2Radios[i].checked) {
+            adjetivo2 = adjetivo2Radios[i].value
+            break
+        }
+    }
+
+    let adjetivo3Radios = document.getElementsByName("adjetivo3")
+    for (let i = 0; i < adjetivo3Radios.length; i++) {
+        if (adjetivo3Radios[i].checked) {
+            adjetivo1 = adjetivo3Radios[i].value
+            break
+        }
+    }
+
+    let adjetivo4Radios = document.getElementsByName("adjetivo4")
+    for (let i = 0; i < adjetivo4Radios.length; i++) {
+        if (adjetivo4Radios[i].checked) {
+            adjetivo4 = adjetivo4Radios[i].value
+            break
+        }
+    }
+
+    let classCaracterizacaoRadios = document.getElementsByName("class_caracterizacao")
+    for (let i = 0; i < classCaracterizacaoRadios.length; i++) {
+        if (classCaracterizacaoRadios[i].checked) {
+            class_caracterizacao = classCaracterizacaoRadios[i].value
+            break
+        }
+    }
+
+    let classTarefasRadios = document.getElementsByName("class_tarefas")
+    for (let i = 0; i < classTarefasRadios.length; i++) {
+        if (classTarefasRadios[i].checked) {
+            class_tarefas = classTarefasRadios[i].value
+            break
+        }
+    }
+
+    let classGlobalRadios = document.getElementsByName("class_global")
+    for (let i = 0; i < classGlobalRadios.length; i++) {
+        if (classGlobalRadios[i].checked) {
+            class_global = classGlobalRadios[i].value
+            break
+        }
+    }
+
+    let classWebsiteRadios = document.getElementsByName("class_website")
+    for (let i = 0; i < classWebsiteRadios.length; i++) {
+        if (classWebsiteRadios[i].checked) {
+            class_website = classWebsiteRadios[i].value
+            break
+        }
+    }
+
+    let classQuestionarioRadios = document.getElementsByName("class_questionario")
+    for (let i = 0; i < classQuestionarioRadios.length; i++) {
+        if (classQuestionarioRadios[i].checked) {
+            class_questionario = classQuestionarioRadios[i].value
+            break
+        }
+    }
+
+    let timestamp = new Date().getTime()
+
     localStorage.setItem(timestamp, JSON.stringify(formData))
-
-    // Optionally, you can clear the form after storing values
-    document.getElementById('questionnaireForm').reset()
 
     alert('Form data has been successfully stored in local storage.')
 }
