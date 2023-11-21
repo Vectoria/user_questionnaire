@@ -33,12 +33,12 @@
                             <span class="input-group-text">Insira o seu nome</span>
                             <div class="form-floating">
                                 <input type="text" aria-label="First name" class="form-control form-control-lg"
-                                    id="nome1" placeholder="1º nome" pattern="[A-Za-z]{1,32}" required>
+                                    id="nome1" placeholder="1º nome" pattern="[a-zA-Z\u00C0-\u024F]{1,32}" required>
                                 <label for="nome1">1º nome</label>
                             </div>
                             <div class="form-floating">
                                 <input type="text" aria-label="Last name" class="form-control form-control-lg"
-                                    id="sobrenome2" placeholder="Sobrenome" pattern="[A-Za-z]{1,32}" required>
+                                    id="sobrenome2" placeholder="Sobrenome" pattern="[a-zA-Z\u00C0-\u024F]{1,32}" required>
                                 <label for="sobrenome2">Sobrenome</label>
                             </div>
 
@@ -114,7 +114,7 @@
                         <h5 class="card-title">Quanto gostas de rock?*</h5>
                         <p class="card-text">
 
-                        <div class="likert" required>
+                        <div class="likert">
                             <label><input name="rock_gostar" type="radio" value="1" required /><span>Nada</span></label>
                             <label><input name="rock_gostar" type="radio" value="2" /><span>Pouco</span></label>
                             <label><input name="rock_gostar" type="radio" value="3" /><span>Indiferente</span></label>
