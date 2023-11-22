@@ -45,3 +45,9 @@ main {
     right: 50;
     left: 50;
 }
+
+table.table-bordered {
+    border: 1px solid purple;
+    margin-top: 20px;
+}
+
