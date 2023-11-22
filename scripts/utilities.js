@@ -214,7 +214,7 @@ function exportLocalStorageToJSON(filename) {
     // Create a download link
     const link = document.createElement("a");
     link.href = URL.createObjectURL(blob);
-    link.download = filenames || "localStorageData.json";
+    link.download = filename || "localStorageData.json";
     // Trigger a click event to download the file
     link.click();
 }
