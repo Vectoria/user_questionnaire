@@ -1,3 +1,71 @@
+// get all the keys in the local storage
+let keys = Object.keys(localStorage)
+
+// genders
+let male = 0
+let female = 0
+let non_binary = 0
+let other = 0
+
+// website grading
+let website1 = 0
+let website2 = 0
+let website3 = 0
+let website4 = 0
+let website5 = 0
+
+// go through all the keys
+keys.forEach(function(key) {
+  // Get the JSON-like string from local storage for each key
+  let jsonString = localStorage.getItem(key);
+
+  // Parse the string into a JavaScript object
+  let data = JSON.parse(jsonString);
+
+  // check if there's a "gender" property
+  if (data && data.gender) {
+    // extract each the gender
+    let gender = data.gender
+    switch(gender){
+        case "Masculino":
+            male++
+        break
+        case "Feminino":
+            female++
+        break
+        case "Não Binário":
+            non_binary++
+        break
+        case "Outro":
+            other++
+        break
+    }
+  }
+  
+  // check if there's a "class_website" property
+  if (data && data.class_website) {
+    // extract each the gender
+    let class_website = data.class_website
+    switch(class_website){
+        case "1":
+            website1++
+        break
+        case "2":
+            website2++
+        break
+        case "3":
+            website3++
+        break
+        case "4":
+            website4++
+        break
+        case "5":
+            website5++
+    }
+  }
+
+})
+
 const ctx = document.getElementById('barras');
 
 new Chart(ctx, {
@@ -6,7 +74,7 @@ new Chart(ctx, {
         labels: ['1', '2', '3', '4', '5'],
         datasets: [{
             label: 'Classificação do website',
-            data: [12, 19, 3, 5, 2], /* mudar a estatistica aqui, metendo as vars*/
+            data: [website1, website2, website3, website4, website5],
             borderWidth: 1
         }]
     },
@@ -27,7 +95,7 @@ new Chart(ctx2, {
         labels: ['Masculino', 'Feminino', 'Não Binário', 'Outro'],
         datasets: [{
             label: '',
-            data: [12, 19, 3, 5],   /* mudar a estatistica aqui, metendo as vars*/
+            data: [male, female, non_binary, other],
             borderWidth: 1
         }]
     },
