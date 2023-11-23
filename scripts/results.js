@@ -53,7 +53,7 @@ keys.forEach(function (key) {
             case "Não Binário":
                 non_binary++
                 break
-            case "Outro":
+            default:
                 other++
                 break
         }
