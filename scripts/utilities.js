@@ -29,7 +29,18 @@ function validateForm() {
     let genderRadios = document.getElementsByName("gender")
     for (let i = 0; i < genderRadios.length; i++) {
         if (genderRadios[i].checked) {
-            gender = genderRadios[i].nextElementSibling.textContent.trim()
+            let label = genderRadios[i].nextElementSibling
+    
+            // Check if there's a nested input
+            let input = label.querySelector('input[type="text"]')
+            
+            if (input && !input.disabled) {
+                // If there's a nested input and it's not disabled, use its value
+                gender = input.value.trim()
+            } else {
+                // If there's no nested input or it's disabled, use the label text
+                gender = label.textContent.trim()
+            }
             break
         }
     }
@@ -174,10 +185,22 @@ function storeValuesInLocalStorage() {
     let genderRadios = document.getElementsByName("gender")
     for (let i = 0; i < genderRadios.length; i++) {
         if (genderRadios[i].checked) {
-            formData.gender = genderRadios[i].nextElementSibling.textContent.trim()
+            let label = genderRadios[i].nextElementSibling
+    
+            // Check if there's a nested input
+            let input = label.querySelector('input[type="text"]')
+            
+            if (input && !input.disabled) {
+                // If there's a nested input and it's not disabled, use its value
+                formData.gender = input.value.trim()
+            } else {
+                // If there's no nested input or it's disabled, use the label text
+                formData.gender = label.textContent.trim()
+            }
             break
         }
     }
+
 
     let rockGostarRadios = document.getElementsByName("rock_gostar")
     for (let i = 0; i < rockGostarRadios.length; i++) {
