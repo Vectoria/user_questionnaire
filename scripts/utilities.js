@@ -31,14 +31,14 @@ function validateForm() {
         if (genderRadios[i].checked) {
             let label = genderRadios[i].nextElementSibling
     
-            // Check if there's a nested input
+            // check if there's any nested input
             let input = label.querySelector('input[type="text"]')
             
             if (input && !input.disabled) {
-                // If there's a nested input and it's not disabled, use its value
+                // if yes, use its value
                 gender = input.value.trim()
             } else {
-                // If there's no nested input or it's disabled, use the label text
+                // if not, use the label
                 gender = label.textContent.trim()
             }
             break
@@ -187,14 +187,14 @@ function storeValuesInLocalStorage() {
         if (genderRadios[i].checked) {
             let label = genderRadios[i].nextElementSibling
     
-            // Check if there's a nested input
+            // check if there's any nested input
             let input = label.querySelector('input[type="text"]')
             
             if (input && !input.disabled) {
-                // If there's a nested input and it's not disabled, use its value
+                // if yes, use its value
                 formData.gender = input.value.trim()
             } else {
-                // If there's no nested input or it's disabled, use the label text
+                // if not, use the label
                 formData.gender = label.textContent.trim()
             }
             break
